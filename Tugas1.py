@@ -26,4 +26,9 @@ plt.xlabel('Quantiles of Age')
 plt.ylabel('Quantiles of Spending Score (1-100)')
 plt.title('Q-Q Plot - Comparing Age and Spending Score')
 
+# Plot standard distribution line
+min_value = min(quantiles_column1.min(), quantiles_column2.min())
+max_value = max(quantiles_column1.max(), quantiles_column2.max())
+plt.plot([min_value, max_value], [min_value, max_value], color='red')
+
 plt.show()
