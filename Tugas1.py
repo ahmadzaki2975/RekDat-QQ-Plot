@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 data = pd.read_csv('Customers.csv')
 quantile_array = []
-filterAge = False
+filterAge = False # Will filter age > 20 if set to True
 
 # Create an array from 1/100 to 99/100 for the quantiles argument
 for i in range(1, 100):
